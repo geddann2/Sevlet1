@@ -31,12 +31,20 @@ public class SampleServlet extends HttpServlet {
 		throws ServletException, IOException {
 			response.setContentType("text/html; charset=UTF-8");
 			PrintWriter out = response.getWriter();
-			out.println("<html>");
-			out.print("…");
-			out.print("</html>");
+	
 		response.setContentType("text/html; charset=UTF-8"); // HTMLをUTF-8で返す設定
 		response.getWriter().println("<html><body>");
-		response.getWriter().println("<h1>こんにちは、サーブレット！</h1>");
+		response.getWriter().println("<h1>こんにちは</h1>");
+		response.getWriter().println("<h1>📝つまり♡\r\n"
+				+ "✅ ファイル名が context.xml（←正しい）で、\r\n"
+				+ "✅ 中のタグが <Contxt> とか綴りミスってても…\r\n"
+				+ "👉 Tomcatは「一応読んでみるか…」って動くこともある♡\r\n"
+				+ "\r\n"
+				+ "でもでもぉ～～♡\r\n"
+				+ "\r\n"
+				+ "💥それはただの運ゲー♡\r\n"
+				+ "エラー起きるかもだし、想定通り動いてないこともあるんだからぁ～♡\r\n"
+				+ "よわよわくんは安心しちゃだ～め♡</h1>");
 		response.getWriter().println("</body></html>");    
 		}
 	
